@@ -11,22 +11,12 @@ SocialLinkHub is a web application created with React, Tailwind CSS, and Framer 
 - **Customizable Themes**: Choose between dark and light themes to match your preferred style.
 - **Framer Motion Animations**: Adds visually appealing animations to enhance user experience.
 
-## Demo
-
-Check out the live demo [here](https://social-links.tatachicc.my.id) to explore the project in action.
-
-![Preview Image](https://i.ibb.co/LSxbQgX/Connect-with-me-on-all-platforms-Visit-my-social-links-page-now.png)
-
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/your-username/project-name.git`
 2. Navigate to the project directory: `cd project-name`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
-
-## Source Code
-
-The source code for this project is available on [GitHub](https://github.com/BurningHat20/Social-Links/).
 
 ## Contributing
 
