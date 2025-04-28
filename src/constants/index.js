@@ -37,14 +37,14 @@ export const links = [
   //   category: "Portfolio",
   // },
   {
-    id: 23,
+    id: 31,
     title: "WhatsApp",
     url: "https://wa.me/628814130142",
     icon: FaWhatsapp,
     category: "Contact",
   },
   {
-    id: 23,
+    id: 32,
     title: "Mail",
     url: "mailto:hafikanuri@gmail.com",
     icon: IoIosMail,
