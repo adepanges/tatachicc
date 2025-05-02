@@ -3,11 +3,19 @@ import {
   FaInstagram,
   FaTiktok,
   FaWhatsapp,
+  FaShoppingBag,
 } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 // import { GrDocumentPdf } from "react-icons/gr";
 
 export const links = [
+  {
+    id: 1,
+    title: "Shopee",
+    url: "https://collshp.com/tata.chicc",
+    icon: FaShoppingBag,
+    category: "Shop Here",
+  },
   {
     id: 10,
     title: "TikTok",

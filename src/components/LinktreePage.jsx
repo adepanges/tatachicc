@@ -7,6 +7,14 @@ import PropTypes from "prop-types";
 import { links } from "../constants";
 import AuthorImage from "../assets/tatachicc.jpeg";
 
+const categories = [
+  "All",
+  "Shop Here",
+  "Social Media",
+  // "Portfolio",
+  "Contact"
+];
+
 const Link = ({ link, isLightTheme }) => (
   <motion.a
     href={link.url}
@@ -112,7 +120,7 @@ const LinktreePage = () => {
             Connect with me on various platforms
           </motion.p>
           <div className="mb-4 flex justify-center">
-            {["All", "Social Media", "Portfolio", "Contact"].map((category) => (
+            {categories.map((category) => (
               <motion.button
                 key={category}
                 className={classnames(
