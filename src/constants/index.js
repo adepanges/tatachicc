@@ -4,6 +4,7 @@ import {
   FaTiktok,
   FaWhatsapp,
   FaShoppingBag,
+  FaHandshake,
 } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 // import { GrDocumentPdf } from "react-icons/gr";
@@ -57,5 +58,12 @@ export const links = [
     url: "mailto:hafikanuri@gmail.com",
     icon: IoIosMail,
     category: "Contact",
+  },
+  {
+    id: 41,
+    title: "Rate Card (Password by Chat)",
+    url: "https://drive.google.com/file/d/1v-kx4Kwss-T9EX3fvrGLiWAT-VTh1H9a/view?usp=sharing",
+    icon: FaHandshake,
+    category: "Collaboration",
   },
 ];

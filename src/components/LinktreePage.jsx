@@ -12,7 +12,8 @@ const categories = [
   "Shop Here",
   "Social Media",
   // "Portfolio",
-  "Contact"
+  "Contact",
+  "Collaboration",
 ];
 
 const Link = ({ link, isLightTheme }) => (
