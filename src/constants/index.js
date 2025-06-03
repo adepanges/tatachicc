@@ -6,10 +6,18 @@ import {
   FaShoppingBag,
   FaHandshake,
 } from "react-icons/fa";
+import { SlPresent } from "react-icons/sl";
 import { IoIosMail } from "react-icons/io";
 // import { GrDocumentPdf } from "react-icons/gr";
 
 export const links = [
+  {
+    id: 0,
+    title: "tata.chicc Giveaway Zone!",
+    url: "https://t.me/tatachicc_bot",
+    icon: SlPresent,
+    category: "Preloved",
+  },
   {
     id: 1,
     title: "Shopee",

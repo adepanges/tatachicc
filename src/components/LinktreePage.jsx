@@ -9,9 +9,9 @@ import AuthorImage from "../assets/tatachicc.jpeg";
 
 const categories = [
   "All",
+  "Preloved",
   "Shop Here",
   "Social Media",
-  // "Portfolio",
   "Contact",
   "Collaboration",
 ];
