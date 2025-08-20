@@ -53,13 +53,13 @@ export const links = [
   //   icon: GrDocumentPdf,
   //   category: "Portfolio",
   // },
-  {
-    id: 31,
-    title: "WhatsApp",
-    url: "https://wa.me/628814130142",
-    icon: FaWhatsapp,
-    category: "Contact",
-  },
+  // {
+  //   id: 31,
+  //   title: "WhatsApp",
+  //   url: "https://wa.me/628814130142",
+  //   icon: FaWhatsapp,
+  //   category: "Contact",
+  // },
   {
     id: 32,
     title: "Mail",
