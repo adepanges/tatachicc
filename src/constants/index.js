@@ -67,11 +67,11 @@ export const links = [
     icon: IoIosMail,
     category: "Contact",
   },
-  {
-    id: 41,
-    title: "Rate Card (Password by Chat)",
-    url: "https://drive.google.com/file/d/1v-kx4Kwss-T9EX3fvrGLiWAT-VTh1H9a/view?usp=sharing",
-    icon: FaHandshake,
-    category: "Collaboration",
-  },
+  // {
+  //   id: 41,
+  //   title: "Rate Card (Password by Chat)",
+  //   url: "https://drive.google.com/file/d/1v-kx4Kwss-T9EX3fvrGLiWAT-VTh1H9a/view?usp=sharing",
+  //   icon: FaHandshake,
+  //   category: "Collaboration",
+  // },
 ];
