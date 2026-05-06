@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaExternalLinkAlt, FaMoon } from "react-icons/fa";
 import { IoIosSunny } from "react-icons/io";
@@ -62,16 +62,13 @@ Link.propTypes = {
   isLightTheme: PropTypes.bool.isRequired
 };
 
-const LinktreePage = () => {
-  const [isLightTheme, setIsLightTheme] = useState(true);
-  const [selectedCategory, setSelectedCategory] = useState("All");
+const prefersLight = () =>
+  typeof window === "undefined" ||
+  !window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  useEffect(() => {
-    const systemPrefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    setIsLightTheme(!systemPrefersDark);
-  }, []);
+const LinktreePage = () => {
+  const [isLightTheme, setIsLightTheme] = useState(prefersLight);
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   const toggleTheme = () => {
     setIsLightTheme((prevTheme) => !prevTheme);
