@@ -22,7 +22,6 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: 20
           cache: pnpm
 
       - name: Install dependencies
@@ -42,6 +41,7 @@ jobs:
           git checkout gh-pages || git checkout --orphan gh-pages
           rm -rf . || true
           echo "node_modules" > .gitignore
+          cp dist/index.html dist/404.html
           cp -r dist/* .
           rm -rf dist
           git add .
