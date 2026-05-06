@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaExternalLinkAlt, FaMoon } from "react-icons/fa";
 import { IoIosSunny } from "react-icons/io";
+import { Link as RouterLink } from "react-router-dom";
 import classnames from "classnames";
 import PropTypes from "prop-types";
 import { links } from "../constants";
@@ -161,20 +162,31 @@ const LinktreePage = () => {
           </div>
         </div>
       </div>
-      <motion.p
-        className="text-sm mt-8 pb-4 text-center font-palanquin"
+      <motion.div
+        className="mt-8 pb-4 text-center font-palanquin"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.7 }}
       >
-        <a
-          href="https://tatachicc.my.id"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          © 2025 @tata.chicc. All rights reserved.
-        </a>
-      </motion.p>
+        <div className="flex justify-center gap-4 mb-2 text-sm">
+          <RouterLink to="/terms-and-conditions" className="hover:underline">
+            Terms and Conditions
+          </RouterLink>
+          <span aria-hidden="true">·</span>
+          <RouterLink to="/privacy-policy" className="hover:underline">
+            Privacy Policy
+          </RouterLink>
+        </div>
+        <p className="text-sm">
+          <a
+            href="https://tatachicc.my.id"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            © 2025 @tata.chicc. All rights reserved.
+          </a>
+        </p>
+      </motion.div>
     </div>
   );
 };
