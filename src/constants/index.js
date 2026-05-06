@@ -5,19 +5,14 @@ import {
   FaWhatsapp,
   FaShoppingBag,
   FaHandshake,
+  FaYoutube,
+  FaFacebook,
 } from "react-icons/fa";
 import { SlPresent } from "react-icons/sl";
 import { IoIosMail } from "react-icons/io";
 // import { GrDocumentPdf } from "react-icons/gr";
 
 export const links = [
-  {
-    id: 0,
-    title: "tata.chicc Giveaway Zone!",
-    url: "https://t.me/tatachicc_bot",
-    icon: SlPresent,
-    category: "Preloved",
-  },
   {
     id: 1,
     title: "Shopee",
@@ -37,6 +32,20 @@ export const links = [
     title: "Instagram",
     url: "https://www.instagram.com/tata.chicc/",
     icon: FaInstagram,
+    category: "Social Media",
+  },
+  {
+    id: 12,
+    title: "YouTube",
+    url: "https://www.youtube.com/@tatachicc",
+    icon: FaYoutube,
+    category: "Social Media",
+  },
+  {
+    id: 13,
+    title: "Facebook",
+    url: "https://www.facebook.com/profile.php?id=61589099946897",
+    icon: FaFacebook,
     category: "Social Media",
   },
   // {

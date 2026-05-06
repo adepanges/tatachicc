@@ -2,6 +2,7 @@ version: 2
 updates:
   - package-ecosystem: "npm"
     directory: "/"
+    target-branch: "feature/version-bump"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 10
@@ -29,5 +30,6 @@ updates:
 
   - package-ecosystem: "github-actions"
     directory: "/"
+    target-branch: "feature/version-bump"
     schedule:
       interval: "weekly"
