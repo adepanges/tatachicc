@@ -1,19 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaArrowLeft, FaMoon } from "react-icons/fa";
 import { IoIosSunny } from "react-icons/io";
 import { Link } from "react-router-dom";
 import classnames from "classnames";
 
-const PrivacyPolicy = () => {
-  const [isLightTheme, setIsLightTheme] = useState(true);
+const prefersLight = () =>
+  typeof window === "undefined" ||
+  !window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  useEffect(() => {
-    const systemPrefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    setIsLightTheme(!systemPrefersDark);
-  }, []);
+const PrivacyPolicy = () => {
+  const [isLightTheme, setIsLightTheme] = useState(prefersLight);
 
   const toggleTheme = () => {
     setIsLightTheme((prevTheme) => !prevTheme);
